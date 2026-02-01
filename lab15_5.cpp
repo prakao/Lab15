@@ -18,5 +18,26 @@ int main(){
 	return 0;
 }
 
+void shuffle(int *a,int *b,int *c,int *d){
+	int i = rand()%4;
+	if(i==0){
+		int temp=*a;
+		*a=*b;
+		*b=temp;
+	}else if(i==1){
+		int temp=*a;
+		*a=*c;
+		*c=temp;
+	}else if(i==2){
+		int temp=*a;
+		*a=*d;
+		*d=temp;
+	}else if(i==3){
+		int temp=*b;
+		*b=*c;
+		*c=temp;
+	}
+	
+}
 //Do not modify the code above this line
 //Write definition of shuffle() using pointer after this line. 
